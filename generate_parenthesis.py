@@ -12,7 +12,7 @@ class Solution(object):
             if n2 >= n1:
                 if n1 > 0:
                     addParenthesis(n1-1, n2, route + '(')
-                if n2 > n1 and n1 < n:
+                if n2 > n1:
                     addParenthesis(n1, n2-1, route + ')')
         
         if n == 0:
